@@ -1,0 +1,4 @@
+repository "RTS 2024(1)@armenbogo@cloud"
+  path "/"
+    br "/main"
+    co "/main"

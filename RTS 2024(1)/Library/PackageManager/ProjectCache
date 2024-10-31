@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638653643522244330
-    m_Hash: 565120548
+      ticks: 638656204088866926
+    m_Hash: 328020453
   m_LockFileStatus:
     m_FilePath: C:/Users/Admin/Documents/GitHub/armen_0/RTS 2024(1)/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638653643522284329
-    m_Hash: 968419440
+      ticks: 638656204088866926
+    m_Hash: 2227632779
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

@@ -31,7 +31,7 @@ public class Buttoncolors : MonoBehaviour
         {
             
             a = true;
-            list_color = new Activecolor[]
+            Buttoncolors.list_color = new Activecolor[]
             {
                 new Activecolor (new Color(255, 0, 0)),
                 new Activecolor (new Color(0, 255, 0)),
@@ -56,10 +56,10 @@ public class Buttoncolors : MonoBehaviour
         int i = 0;
         while (i < list_color.Length)
         {
-            if (!list_color[i].active)
+            if (!Buttoncolors.list_color[i].active)
             { 
-                list_color[i].active = true;
-                but.image.color=list_color[i].color;
+                Buttoncolors.list_color[i].active = true;
+                but.image.color=Buttoncolors.list_color[i].color;
             }
             
         }
@@ -72,31 +72,31 @@ public class Buttoncolors : MonoBehaviour
         //for (int ii = 0; ii<a.Length; ii++)
         //{
         //    if (but == a[ii]) { indbutton = ii-3; }
-        //}gh
+        //}
         while (true)
         {
-            if (i_but>=7) { i_but = 0;  continue;}
+            if (Buttoncolors.i_but >=7) { Buttoncolors.i_but = 0;  continue;}
             else
             {
-                if (list_color[i_but].active)
+                if (!Buttoncolors.list_color[i_but].active)
                 {
-                    if (i_but+1 == 8)
+                    if (Buttoncolors.i_but +1 == 8)
                     {
-                        list_color[i_but].active = false;
-                        but.image.color=list_color[i_but+1].color;
-                        i_but = 0;
+                        Buttoncolors.list_color[Buttoncolors.i_but].active = false;
+                        but.image.color= Buttoncolors.list_color[Buttoncolors.i_but +1].color;
+                        Buttoncolors.i_but = 0;
                     }
                     else
                     {
-                        list_color[i_but].active = false;
-                        but.image.color = list_color[i_but + 1].color;
-                        i_but++;
+                        Buttoncolors.list_color[Buttoncolors.i_but].active = false;
+                        but.image.color = Buttoncolors.list_color[Buttoncolors.i_but + 1].color;
+                        Buttoncolors.i_but++;
                     }
                     break;
                 }
                 
             }
-            i_but++;
+            Buttoncolors.i_but++;
         }
     }
 }

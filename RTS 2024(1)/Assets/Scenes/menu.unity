@@ -9132,7 +9132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropdown1: {fileID: 1975446593}
   vybor: 2
-  prefab: {fileID: 6253152808881662798, guid: b2df27a34b2d7f5459c947ccbe21c3c9, type: 3}
+  prefab: {fileID: 2550693332615473998, guid: cd0a58686a50d034c8569fd7dba6d6dc, type: 3}
   content: {fileID: 1772939434}
   a: 0
   chil_cou: 0

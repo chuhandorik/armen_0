@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6152473066258695160}
   - component: {fileID: 4127767889868680449}
   - component: {fileID: 8941031525324795253}
-  - component: {fileID: 505025025342528145}
+  - component: {fileID: 811911265417697526}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -121,9 +121,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 505025025342528145}
-        m_TargetAssemblyTypeName: colorButtonsrc, Assembly-CSharp
-        m_MethodName: Swin
+      - m_Target: {fileID: 811911265417697526}
+        m_TargetAssemblyTypeName: Buttoncolors, Assembly-CSharp
+        m_MethodName: ChangeColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -133,7 +133,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &505025025342528145
+--- !u!114 &811911265417697526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,10 +142,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 628512513108419246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af1b8626093ae040a176cc2d1460a73, type: 3}
+  m_Script: {fileID: 11500000, guid: 18b6815a8438def448251cece541ddb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  o: 0
+  vybor: 3
   but: {fileID: 8941031525324795253}
 --- !u!1 &2124883967225165723
 GameObject:
@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 3386067267868515414}
   - component: {fileID: 362466868765891719}
   - component: {fileID: 1787060010474997055}
+  - component: {fileID: 2595559996311306891}
   m_Layer: 5
   m_Name: EnemyButton
   m_TagString: Untagged
@@ -245,6 +246,20 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &2595559996311306891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124883967225165723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b6815a8438def448251cece541ddb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vybor: 0
+  but: {fileID: 8941031525324795253}
 --- !u!1 &4934200494336321177
 GameObject:
   m_ObjectHideFlags: 0

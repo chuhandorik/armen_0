@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1402658785}
   m_HandleRect: {fileID: 1402658783}
   m_Direction: 0
-  m_Value: 0.9999998
+  m_Value: 1.0000001
   m_Size: 0.7876785
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7817,6 +7817,7 @@ GameObject:
   - component: {fileID: 1772939434}
   - component: {fileID: 1772939435}
   - component: {fileID: 1772939436}
+  - component: {fileID: 1772939437}
   m_Layer: 5
   m_Name: container
   m_TagString: Untagged
@@ -7886,6 +7887,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 0
+--- !u!114 &1772939437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772939433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd5fcc5223c628409c8ca1c3b2568b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 1772939434}
+  spawn: {fileID: 2550693332615473998, guid: cd0a58686a50d034c8569fd7dba6d6dc, type: 3}
 --- !u!1 &1783566764
 GameObject:
   m_ObjectHideFlags: 0
@@ -8440,6 +8455,7 @@ RectTransform:
   m_Children:
   - {fileID: 1975446592}
   - {fileID: 1943792061}
+  - {fileID: 1997227697}
   m_Father: {fileID: 1772939434}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8972,7 +8988,7 @@ GameObject:
   - component: {fileID: 1975446593}
   - component: {fileID: 1975446596}
   m_Layer: 5
-  m_Name: Dropdown (1)
+  m_Name: Dropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9068,8 +9084,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1975446596}
-        m_TargetAssemblyTypeName: EnemyButton, Assembly-CSharp
-        m_MethodName: CreateEnemyButton
+        m_TargetAssemblyTypeName: Downlist, Assembly-CSharp
+        m_MethodName: GetValueehj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1772939437}
+        m_TargetAssemblyTypeName: Buttons_ova, Assembly-CSharp
+        m_MethodName: CreateButtonsEnemy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9127,15 +9155,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1975446591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21ef7fd2dacad3f4abc281b7c46d2680, type: 3}
+  m_Script: {fileID: 11500000, guid: 37b78e58ea296bf479b2397b7b4c1b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropdown1: {fileID: 1975446593}
-  vybor: 2
-  prefab: {fileID: 2550693332615473998, guid: cd0a58686a50d034c8569fd7dba6d6dc, type: 3}
-  content: {fileID: 1772939434}
-  a: 0
-  chil_cou: 0
+  dropdown: {fileID: 1975446593}
 --- !u!1 &1976452355
 GameObject:
   m_ObjectHideFlags: 0
@@ -9448,6 +9471,41 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1997227696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997227697}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1997227697
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997227696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1920127805}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1999095339
 GameObject:

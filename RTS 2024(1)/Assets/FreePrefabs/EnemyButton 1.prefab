@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2243658847071109578}
   - component: {fileID: 8712402087897515078}
   - component: {fileID: 1656589782622902690}
-  - component: {fileID: 1335731294500965677}
   m_Layer: 5
   m_Name: EnemyButton 1
   m_TagString: Untagged
@@ -99,20 +98,6 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &1335731294500965677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86108739159555465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18b6815a8438def448251cece541ddb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vybor: 0
-  but: {fileID: 5510270436385600456}
 --- !u!1 &378436911233996953
 GameObject:
   m_ObjectHideFlags: 0
